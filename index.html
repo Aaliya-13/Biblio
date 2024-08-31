@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>BIBLIO - Virtual Library</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+
+        <a class="navbar-brand" href="#">
+            <img src="Images/logo.jpg" class="img.fluid" alt="Biblio Logo" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered" style="color: #045f5f;"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Study</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box text-center">
+            <input type="text" class="form-control" placeholder="Search for book, author, genre...">
+            <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #008080;"></i></a>
+        </div>
+
+    </nav>
+    
+    <header>
+        <div class="row">
+            <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="Images/girl.jpg" class="img-fluid" alt="Girl reading a book" />
+            </div>
+            <div class="col-md-6">  
+                <div style="padding-top: 80px; text-align: left;">
+                    <h1 class="display-6" style="font-family: 'Times New Roman', Times, serif;">WELCOME !</h1>
+                        <p class="lead">
+                            <i style="font-weight: bold;">" There's no friend as loyal as a book "</i><br><br>
+                            So, in the world of deceiving people, look for the books that heal you!<br>
+                            <t style="font-weight: bold;">BIBLIO </t> most user-friendly site where you can<br>read, buy or rent your choice of books anytime anywhere.
+                        </p>
+                        <a class="btn btn-primary" style="border-radius: 30px; background-color: #dda0dd; border-color: #dda0dd; color: #008080; margin-top:20px;" href="#learn">Learn More</a>
+                </div>
+
+            </div>    
+        </div>
+    </header>
+
+    <div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="service_card text-center">
+                    <i class="fa-solid fa-book-open" style="color: #045f5f; font-size: 2rem;"></i>
+                    <h3>Free Books</h3>
+                    <p>Get 50+ free books<br>to read and enjoy</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="service_card text-center">
+                    <i class="fa-solid fa-dollar-sign" style="color: #045f5f; font-size: 2rem;"></i>
+                    <h3>Paid Books</h3>
+                    <p>Buy or rent 150+ books<br>and make it all yours</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="service_card text-center">
+                    <i class="fa-solid fa-house-laptop" style="color: #045f5f; font-size: 2rem;"></i>
+                    <h3>Study Room</h3>
+                    <p>Get peaceful environment<br>to read with your friends</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="service_card text-center">
+                    <i class="fa-solid fa-question-circle" style="color: #045f5f; font-size: 2rem;"></i>
+                    <h3>Ask-Librarian</h3>
+                    <p>Get your queries solved<br>and help from the librarian</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="fictional">
+            <h1>Fiction</h1>
+            <div class="row">
+
+                <div class="col-md-3 mb-4" *ngFor="let card of fictionalCards">
+                    <div class="card">
+                        <img src="Images/Fiction/f1.jpg" class="card-img-top" alt="Space Wars">
+                        <div class="card-body">
+                            <h5 class="card-title">Space Wars</h5>
+                            <p class="card-text writer">Aaron Loeb</p>
+                            <p class="card-text category">$25.60</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4" *ngFor="let card of fictionalCards">
+                    <div class="card">
+                        <img src="Images/Fiction/f2.jpg" class="card-img-top" alt="Conquest Of Flames">
+                        <div class="card-body">
+                            <h5 class="card-title">Conquest Of Flames</h5>
+                            <p class="card-text writer">Shawn Garcia</p>
+                            <p class="card-text category">$35.00</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4" *ngFor="let card of fictionalCards">
+                    <div class="card">
+                        <img src="Images/Fiction/f3.jpg" class="card-img-top" alt="Glory And Fall">
+                        <div class="card-body">
+                            <h5 class="card-title">Glory And Fall</h5>
+                            <p class="card-text writer">Avery Davis</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4" *ngFor="let card of fictionalCards">
+                    <div class="card">
+                        <img src="Images/Fiction/f4.jpg" class="card-img-top" alt="Breaking">
+                        <div class="card-body">
+                            <h5 class="card-title">Breaking</h5>
+                            <p class="card-text writer">Kim Chun Hei</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+ 
+        <div class="suspense">
+            <h1>Suspense</i></h1>
+            <div class="row">
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Suspense/s1.jpg" class="card-img-top" alt="In The Woods">
+                        <div class="card-body">
+                            <h5 class="card-title">In The Woods</h5>
+                            <p class="card-text writer">Aaron Loeb</p>
+                            <p class="card-text category">$30.50</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Suspense/s3.jpg" class="card-img-top" alt="Thread">
+                        <div class="card-body">
+                            <h5 class="card-title">Thread</h5>
+                            <p class="card-text writer">Jorge Luis</p>
+                            <p class="card-text category">$30.20</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Suspense/s4.jpg" class="card-img-top" alt="Venus">
+                        <div class="card-body">
+                            <h5 class="card-title">Venus</h5>
+                            <p class="card-text writer">Margarita Perez</p>
+                            <p class="card-text category">$40.00</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Suspense/s2.jpg" class="card-img-top" alt="Alone">
+                        <div class="card-body">
+                            <h5 class="card-title">Alone</h5>
+                            <p class="card-text writer">Morgan Maxwell</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+        <div class="romance">
+            <h1>Romance</h1>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Romance/r1.jpg" class="card-img-top" alt="I'll Never Forget You">
+                        <div class="card-body">
+                            <h5 class="card-title">I'll Never Forget You</h5>
+                            <p class="card-text writer">Claudia Wilson</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Romance/r2.jpg" class="card-img-top" alt="Love Of My Life">
+                        <div class="card-body">
+                            <h5 class="card-title">Love Of My Life</h5>
+                            <p class="card-text writer">Morgan Maxwell</p>
+                            <p class="card-text category">$30.00</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Romance/r3.jpg" class="card-img-top" alt="He Was My First Love">
+                        <div class="card-body">
+                            <h5 class="card-title">He Was My First Love</h5>
+                            <p class="card-text writer">Claudia Wilson</p>
+                            <p class="card-text category">$15.90</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Romance/r4.jpg" class="card-img-top" alt="Waiting For you">
+                        <div class="card-body">
+                            <h5 class="card-title">Waiting For you</h5>
+                            <p class="card-text writer">Andrew Stale</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="horror">
+            <h1>Horror</h1>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Horror/h1.jpg" class="card-img-top" alt="Can You Hear Me?">
+                        <div class="card-body">
+                            <h5 class="card-title">Can You Hear Me?</h5>
+                            <p class="card-text writer">Bailey Dupant</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Horror/h2.jpg" class="card-img-top" alt="Ranch">
+                        <div class="card-body">
+                            <h5 class="card-title">Ranch</h5>
+                            <p class="card-text writer">Jade Smith</p>
+                            <p class="card-text category">Free</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Horror/h3.jpg" class="card-img-top" alt="Fallen Angel">
+                        <div class="card-body">
+                            <h5 class="card-title">Fallen Angel</h5>
+                            <p class="card-text writer">Daniel Gallego</p>
+                            <p class="card-text category">$25.00</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="Images/Horror/h4.jpg" class="card-img-top" alt="The Flawless Beauty">
+                        <div class="card-body">
+                            <h5 class="card-title">The Flawless Beauty</h5>
+                            <p class="card-text writer">Neil Tran</p>
+                            <p class="card-text category">$30.55</p>
+                            <a href="#btn" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="study container-fluid">
+            <div class="col-md-6 text-md-left text-center">
+                <h2><span>VIRTUAL</span><br>STUDY ROOM</h2>
+                <p>Virtual Study Room, a new way to study with your peers. Open for everyone, it will offer a communal online space for friends, classmates, and fellow bobcats to gather once again. Meet new people without having the pressure of communicating.</p>
+                <a href="#learn" class="btn btn-primary mr-3">Learn More</a>
+                <a href="#enter" class="btn btn-primary">Let's Go!</a>
+            </div>
+    </div>
+
+    <div class="librarian container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-md-center text-center">
+                <img class="img-fluid" src="Images/librarian.png" alt="Librarian"/>
+            </div>
+            <div class="col-md-6 text-md-right text-center">
+                <h2><span>Ask The</span><br>Librarian</h2>
+                <p>Ask-The-Librarian provides you a free, quick reference service and answers to brief, factual questions asked by the users.
+                    We encourage you to ask a specialist using any tabs below or directly access the chat service</p>
+                <a href="#a" class="btn btn-primary mr-3">FAQ</a>
+                <a href="#b" class="btn btn-primary mr-3">General Queries</a>
+                <a href="#c" class="btn btn-primary">Chat</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="review container">
+        <h1 class="text-center">Reviews</h1>
+    
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="review_card text-center">
+                    <i class="fa-solid fa-quote-right" style="color: #045f5f;"></i>
+                    <div class="card_top">
+                        <img src="Images/user1.png" class="img-fluid rounded-circle" alt="Jenny Lee">
+                    </div>
+                    <div class="card-body">
+                        <h2>Jenny Lee</h2>
+                        <p>Nice experience. Loved the virtual study room service very much. It was much peaceful than the original one.</p>
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-regular fa-star" style="color: #045f5f;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="review_card text-center">
+                    <i class="fa-solid fa-quote-right" style="color: #045f5f;"></i>
+                    <div class="card_top">
+                        <img src="Images/user2.jpeg" class="img-fluid rounded-circle" alt="John Deo">
+                    </div>
+                    <div class="card-body">
+                        <h2>John Deo</h2>
+                        <p>I am having a great time with Biblio. I can find all my favorite books at one place. Thank You!</p>
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #045f5f;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="review_card text-center">
+                    <i class="fa-solid fa-quote-right" style="color: #045f5f;"></i>
+                    <div class="card_top">
+                        <img src="Images/user3.jpg" class="img-fluid rounded-circle" alt="Haiely Luis">
+                    </div>
+                    <div class="card-body">
+                        <h2>Sarah Malik</h2>
+                        <p>I am an addict of books, and it's a perfect place for me. Great source for bookworms.</p>
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                            <i class="fa-solid fa-star" style="color: #045f5f;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer text-center mt-4">
+        <p>&copy; 2024 BIBLIO - Your Virtual Library</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
